@@ -7,6 +7,7 @@
 
 *{
     box-sizing: border-box;
+    margin: 0px auto 0px auto;
 }
 
 .body{
@@ -106,7 +107,7 @@
 
 .campaign{
   max-width: 68.125rem;
-  margin: 0px auto 0px auto;
+  margin: 3.125rem auto 6.25rem auto;
 }
 
 .campaign-title{
@@ -164,8 +165,6 @@
   .banner{
     display: flex;
     justify-content: center;
-    margin-top: 0.5rem;
-    /* margin-bottom: 3.125rem; */
   }
   .left-image{
     display: none;
