@@ -112,7 +112,7 @@
 
 .campaign-title{
   font-size: 1.875rem;
-  font-weight: bold;
+  font-weight: 600;
   margin: 0px auto 2.5rem auto;
   text-align: center;
 }
@@ -124,7 +124,53 @@
   gap: 1.875rem;
 }
 
+.campaign-text p{
+  margin-bottom: 1.25rem;
+}
+
 .campaign-text p, ul{
+  color: #1F2937;
+}
+
+/* Impact Section */
+
+.impact-section{
+  background-color: #CFF0DC;
+  height: 27.25rem;
+  padding: 6.25rem 8.438rem 6.25rem 8.438rem;
+}
+
+.impact-section-title{
+  font-size: 1.875rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.card{
+  width: 32.292rem;
+  height: 9.75rem;
+  background-color: white;
+  /* border: 1px blue dashed; */
+  border-radius: 0.938rem;
+  padding: 2.5rem;
+  text-align: center;
+}
+
+.impact-cards{
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-statistics{
+  font-size: 1.875rem;
+  font-weight: 600;
+  color: #15803D;
+  margin-bottom: 0.7rem;
+}
+
+.statistics-description{
   color: #1F2937;
 }
 
@@ -217,5 +263,25 @@
     margin: 0px;
     max-width: 100%;
     height: auto;
+  }
+
+  /* Impact Section */
+
+  .impact-section{
+    height: auto;
+    padding: 2.5rem;
+  }
+
+  .impact-cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .card{
+    width: 100%;
+    height: 100%;
+    padding: 2.5rem;
   }
 }
