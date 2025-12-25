@@ -9,6 +9,10 @@
     box-sizing: border-box;
 }
 
+.body{
+  margin: 0px auto 0px auto;
+}
+
 
 .header{
   background-color: #15803D;
