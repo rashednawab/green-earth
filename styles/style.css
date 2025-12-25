@@ -13,13 +13,13 @@
   margin: 0px auto 0px auto;
 }
 
-
+/* Header section */
 .header{
   background-color: #15803D;
   max-width: 120rem;
 }
 
-/* Nav Bar */
+/* Nav Bar Section*/
 .nav-bar{
   display: flex;
   align-items: center;
@@ -35,7 +35,6 @@
 
 .nav-bar ul{
   list-style-type: none;
-  /* border: 1px red dashed; */
   padding: 0px;
 }
 
@@ -64,16 +63,14 @@
 .main{
   max-width: 120rem;
   height: 23.938rem;
-  background-color: #CFF0DC;
-  /* margin-top: 0px; */
-  border: 1px red dashed;
 }
 
-/* Banner */
+/* Banner Section*/
 .banner{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #CFF0DC;
 }
 
 .banner-main{
@@ -93,6 +90,7 @@
   max-width: 36.438rem;
   text-align: center;
   margin: 0.5rem 0rem 1.5rem 0rem;
+  color: #1F2937;
 }
 
 .banner-btn{
@@ -102,6 +100,31 @@
   height: 2.2rem;
   width: 7rem;
   border: none;
+}
+
+/* Campaign Section */
+
+.campaign{
+  max-width: 68.125rem;
+  margin: 0px auto 0px auto;
+}
+
+.campaign-title{
+  font-size: 1.875rem;
+  font-weight: bold;
+  margin: 0px auto 2.5rem auto;
+  text-align: center;
+}
+
+.campaign-body{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.875rem;
+}
+
+.campaign-text p, ul{
+  color: #1F2937;
 }
 
 
@@ -142,6 +165,7 @@
     display: flex;
     justify-content: center;
     margin-top: 0.5rem;
+    /* margin-bottom: 3.125rem; */
   }
   .left-image{
     display: none;
@@ -153,5 +177,46 @@
 
   .banner-title{
     text-align: center;
+  }
+
+  .banner-btn{
+    margin-bottom: 0.5rem;
+  }
+
+  .banner-subtitle{
+    padding: 0rem 0.5rem 0rem 0.5rem;
+  }
+
+  /* Campaign Section */
+  .campaign{
+    margin-top: 3.125rem;
+  }
+  
+  .campaign-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0rem 0.5rem 0rem 0.5rem;
+  }
+  .campaign-text p{
+    text-align: center;
+  }
+
+  .campaign-title{
+    margin-bottom: 0.8rem;
+  }
+
+  .campaign-body{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+  }
+
+  .campaign-image{
+    padding: 0.5rem;
+    margin: 0px;
+    max-width: 100%;
+    height: auto;
   }
 }
