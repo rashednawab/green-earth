@@ -32,7 +32,7 @@
 
 .nav-bar ul{
   list-style-type: none;
-  border: 1px red dashed;
+  /* border: 1px red dashed; */
   padding: 0px;
 }
 
