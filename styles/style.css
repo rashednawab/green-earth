@@ -20,8 +20,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  margin: 1.5rem 8.4375rem 1.5rem 8.4375rem;
+  padding: 1.5rem 8.4375rem 1.5rem 8.4375rem;
 }
 
 .nav-bar p{
@@ -44,12 +43,58 @@
 .menu-items{
   display: flex;
   gap: 1.5rem;
+  margin: 0px;
 }
 
 .nav-btn{
   background-color: #FACC15;
   color: #15803D;
-  border-radius: 0.625rem;
+  border-radius: 1rem;
+  height: 2.2rem;
+  width: 7rem;
+  border: none;
+}
+
+
+/* Main section */
+.main{
+  max-width: 120rem;
+  height: 23.938rem;
+  background-color: #CFF0DC;
+  /* margin-top: 0px; */
+  border: 1px red dashed;
+}
+
+/* Banner */
+.banner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.banner-main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.banner-title{
+  font-size: 3.125rem;
+  font-weight: bold;
+  margin: 0px;
+  max-width: 39.188rem;
+}
+
+.banner-subtitle{
+  max-width: 36.438rem;
+  text-align: center;
+  margin: 0.5rem 0rem 1.5rem 0rem;
+}
+
+.banner-btn{
+  background-color: #FACC15;
+  color: #15803D;
+  border-radius: 1rem;
   height: 2.2rem;
   width: 7rem;
   border: none;
@@ -65,9 +110,11 @@
 
 
 @media screen and (max-width: 768px){
+  /* nav bar section */
   .nav-bar{
     flex-direction: column;
     padding: 1.5rem 0rem 1.5rem 0rem;
+    gap: 0.5rem;
   }
 
   .nav-bar p{
@@ -82,6 +129,25 @@
   }
 
   .nav-bar ul{
+    text-align: center;
+  }
+
+
+  /* banner section */
+  .banner{
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+  }
+  .left-image{
+    display: none;
+  }
+
+  .right-image{
+    display: none;
+  }
+
+  .banner-title{
     text-align: center;
   }
 }
