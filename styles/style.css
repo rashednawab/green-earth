@@ -85,6 +85,7 @@
   font-weight: bold;
   margin: 0px;
   max-width: 39.188rem;
+  text-align: center;
 }
 
 .banner-subtitle{
@@ -161,6 +162,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 3.125rem;
 }
 
 .card-statistics{
@@ -179,8 +181,8 @@
 .plant-a-tree{
   background-color: #166534;
   height: 36.938rem;
-  padding: 6.25rem 39.688rem 6.25rem 39.688rem;
-  /* border: 5px blue dashed; */
+  padding-top: 6.25rem;
+  /* padding: 6.25rem 39.688rem 6.25rem 39.688rem; */
 }
 
 .plant-a-tree-title{
@@ -189,6 +191,9 @@
   text-align: center;
   color: white;
   margin-bottom: 2.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  /* border: 5px red dashed; */
 }
 
 .form{
@@ -202,6 +207,8 @@
   flex-direction: column;
   align-items: center;
   gap: 0.75rem;
+  /* border: 5px blue dashed; */
+  margin: 0px auto;
 }
 
 .donate-btn{
@@ -343,5 +350,9 @@
   .plant-a-tree{
     padding: 2rem;
     height: auto;
+  }
+
+  .form{
+    width: 100%;
   }
 }
