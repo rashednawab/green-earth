@@ -12,13 +12,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-
-    <!-- DaisyUI Integration-->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
-    <!-- Tailwind Integration -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
 <body class="inter-basic body">
@@ -48,6 +41,27 @@
                 <img src="assets/hero-leaf2.png" alt="">
             </div>
         </div>
+        <!-- Choose your Tree Section -->
+        <div class="choose-tree">
+            <h3 class="choose-tree-title">Choose Your Trees</h3>
+            <div class="categories">
+            <h3 class="categories-title">Categories</h3>
+                <ul id="category-list" class="category-list">
+                    <!-- <li class="category-list-item">A</li>
+                    <li class="category-list-item">B</li>
+                    <li class="category-list-item">C</li>
+                    <li class="category-list-item">D</li>
+                    <li class="category-list-item">E</li>
+                    <li class="category-list-item">F</li>
+                    <li class="category-list-item">G</li>
+                    <li class="category-list-item">H</li>
+                    <li class="category-list-item">I</li>
+                    <li class="category-list-item">J</li> -->
+                </ul>
+            </div>
+        </div>
+        </div>
+        
         <!-- Campaign Section -->
         <div class="campaign">
             <h2 class="campaign-title">About the Campaign</h2>
@@ -102,6 +116,26 @@
             <p>© 2025 Green Earth. All Rights Reserved.</p>
         </div>
     </main>
-    
+    <script>
+        fetch("https://openapi.programming-hero.com/api/categories")
+        .then(response => response.json())
+        .then(data => displayCategories(data));
+
+
+        const displayCategories = (categories) => {
+
+            const categoryListContainer = document.getElementById("category-list");
+
+            categories.categories.forEach(element => {
+                // console.log(element);
+                // console.log(element.category_name);
+                const li = document.createElement("li");
+                li.className = "category-list-item";
+                li.innerText = element.category_name;
+
+                categoryListContainer.appendChild(li);
+            });
+            }
+    </script>
 </body>
 </html>

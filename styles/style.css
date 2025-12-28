@@ -72,6 +72,7 @@
   justify-content: space-between;
   align-items: center;
   background-color: #CFF0DC;
+  
 }
 
 .banner-main{
@@ -84,7 +85,6 @@
   font-size: 3.125rem;
   font-weight: bold;
   margin: 0px;
-  max-width: 39.188rem;
   text-align: center;
 }
 
@@ -235,6 +235,35 @@
   background-color: #14532D;
   height: 4.5rem;
   padding: 1.5rem 0rem 1.5rem 0rem;
+}
+
+
+/* Choose your Trees Section */
+
+.choose-tree{
+  background-color: #F0FDF4;
+}
+
+/* Categories */
+.category-list{
+  padding: 0px;
+}
+
+.category-list-item{
+  width: 15.625rem;
+  height: 2.5rem;
+  list-style: none;
+  border: 1px blue dashed;
+  margin: 0px;
+  padding: 0.5rem;
+}
+
+.choose-tree-title{
+  padding-top: 6.25rem;
+  margin-bottom: 2.5rem;
+  font-size: 1.875rem;
+  font-weight: 600;
+  text-align: center;
 }
 
 
